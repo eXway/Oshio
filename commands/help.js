@@ -10,6 +10,7 @@ let embedInfo = new Discord.RichEmbed()
 .addField("/ho/report", "FIELD DESCRIPTION")
 .addField("/ho/kick", "FIELD DESCRIPTION")
 .addField("/ho/message", "FIELD DESCRIPTION")
+.setFooter("No i zawsze możesz nasz przywitać i *hug* <3")
 .setColor("#8f8ff1");
 
 
