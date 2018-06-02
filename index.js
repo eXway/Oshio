@@ -1,0 +1,70 @@
+const config = require("./config.json");
+const Discord = require("discord.js");
+const fs = require("fs");
+const bot = new Discord.Client({disableEveryone: true});
+bot.commands = new Discord.Collection();
+
+fs.readdir("./commands/", (err, files) => {
+
+  if(err) console.log(err);
+
+  let jsfile = files.filter(f => f.split(".").pop() === "js")
+  if(jsfile.length <= 0){
+    console.log("Coś jest nie tak z komendami :c");
+    return;
+  }
+
+  jsfile.forEach((f, i) =>{
+    let props = require(`./commands/${f}`);
+    console.log(`Komenda ${f} załadowana!`);
+    bot.commands.set(props.help.name, props);
+  });
+});
+
+
+bot.on("ready", async() => { // po zalogowaniu
+  console.log(`${bot.user.username} jest zalogowany!`);
+  bot.user.set
+});
+
+
+bot.on("message", async message => { // czyta wiadomosci
+  if(message.author.bot) return;
+  if(message.channel.type === "dm") return;
+
+  let prefix = config.prefix;
+  let messageArray = message.content.split(" "); //To co po spacji nie jest messageArray
+  let cmd = messageArray[0].toLowerCase();
+  let args = messageArray.slice(1); //po spacji
+
+
+let commandfile = bot.commands.get(cmd.slice(prefix.length));
+if(commandfile) commandfile.run(bot,message,args);
+
+
+
+// TEST
+  if(cmd === `${prefix}test`){
+    return message.channel.send("test");
+}
+//przywitania
+  if(
+    cmd === "heja" ||
+    cmd === "siema" ||
+    cmd === "witaj")
+    {
+      return message.channel.send("No siemaneczko");
+    }
+
+
+
+})
+//pierwsze logowanie
+// client.on('guildMemberAdd', member => {
+//   const welcome_channel = member.guild.channels.find('publiczny', 'member-log');
+//   if (!channel) return;
+//   welcome_channel.send(`Witaj na serwerze HO, ${member} Jeśli masz problemy z Discordem lub nie wiesz co i jak, możesz zgłosić się do Administratora Discord :D `);
+// });
+
+
+bot.login(config.token);
