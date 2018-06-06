@@ -51,7 +51,7 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("siema") ||
     !cmd.indexOf("elo") ||
     !cmd.indexOf("eló") ||
-    (!message.indexOf("gitara") ||
+    !message.indexOf("gitara") ||
     !cmd.indexOf("witaj") )
     {
       return message.channel.send("No siemaneczko");
