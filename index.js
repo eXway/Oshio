@@ -50,7 +50,7 @@ if(commandfile) commandfile.run(bot,message,args);
 }
 //przywitania
   if(
-    Array.of(cmd) == "hej" ||
+    cmd.indexOf("hej") ||
     Array.of(cmd) == "siem" ||
     Array.of(cmd) == "witaj" )
     {
