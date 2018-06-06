@@ -50,9 +50,9 @@ if(commandfile) commandfile.run(bot,message,args);
 }
 //przywitania
   if(
-    !Array.of("hej") ||
-    !Array.of("siem") ||
-    !Array.of("witaj"))
+    Array.of(cmd) == "hej" ||
+    Array.of(cmd) == "siem" ||
+    Array.of(cmd) == "witaj" )
     {
       return message.channel.send("No siemaneczko");
     }
