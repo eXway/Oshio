@@ -51,10 +51,12 @@ if(commandfile) commandfile.run(bot,message,args);
 //przywitania
   if(
     !cmd.indexOf("hej") ||
+    !cmd.indexOf("cześć") ||
+    !cmd.indexOf("czesc") ||
     !cmd.indexOf("siema") ||
     !cmd.indexOf("elo") ||
     !cmd.indexOf("eló") ||
-    !cmd.indexOf("gitara siema") ||
+    !message.indexOf("gitara siema") ||
     !cmd.indexOf("witaj") )
     {
       return message.channel.send("No siemaneczko");
