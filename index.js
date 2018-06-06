@@ -45,7 +45,7 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 // TEST
-  if(cmd === `${prefix}test`){
+  if(cmd === `test`){
     return message.channel.send("test");
 }
 //przywitania
