@@ -43,11 +43,6 @@ let commandfile = bot.commands.get(cmd.slice(prefix.length));
 if(commandfile) commandfile.run(bot,message,args);
 
 
-
-// TEST
-  if(cmd === `test`){
-    return message.channel.send("test");
-}
 //przywitania
   if(
     !cmd.indexOf("hej") ||
@@ -56,10 +51,16 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("siema") ||
     !cmd.indexOf("elo") ||
     !cmd.indexOf("eló") ||
-    (!message.indexOf("gitara") && !message.indexOf("siema")) ||
+    (!message.indexOf("gitara") ||
     !cmd.indexOf("witaj") )
     {
       return message.channel.send("No siemaneczko");
+    }
+       
+  if(
+    !cmd.indexOf("hara") )
+    {
+      return message.channel.send("REGUJE KURDE!!!");
     }
 
 
