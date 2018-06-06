@@ -60,13 +60,5 @@ if(commandfile) commandfile.run(bot,message,args);
 
 
 })
-//pierwsze logowanie
-// let member = guild.member.message;
-//  client.on('guildMemberAdd', member => {
-//    const welcome_channel = member.guild.channels.find('publiczny', 'member-log');
-//    if (!channel) return;
-//    welcome_channel.send(`Witaj na serwerze HO, ${member} Jeśli masz problemy z Discordem lub nie wiesz co i jak, możesz zgłosić się do Administratora Discord :D `);
-//  });
-
 
 bot.login(config.token);
