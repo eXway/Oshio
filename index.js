@@ -52,7 +52,7 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("hej") ||
     !cmd.indexOf("cześć") ||
     !cmd.indexOf("czesc") ||
-    !cmd.indexOf("siema") ||
+    !cmd.indexOf("siem") ||
     !cmd.indexOf("elo") ||
     !cmd.indexOf("eló") ||
     !cmd.indexOf("witaj") )
