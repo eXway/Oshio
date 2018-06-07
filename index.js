@@ -5,11 +5,11 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
-fs.readdir("./commands/", (err, files) => {
-
     function RAND(n) {
      return Math.floor((Math.random() * n));
     }
+
+fs.readdir("./commands/", (err, files) => { // Commands .js file
   
   if(err) console.log(err);
 
