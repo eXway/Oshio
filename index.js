@@ -7,6 +7,10 @@ bot.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
 
+    function RAND(n) {
+     return Math.floor((Math.random() * n));
+    }
+  
   if(err) console.log(err);
 
   let jsfile = files.filter(f => f.split(".").pop() === "js")
@@ -51,10 +55,19 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("siema") ||
     !cmd.indexOf("elo") ||
     !cmd.indexOf("eló") ||
-    !cmd.indexOf("gitara") ||
     !cmd.indexOf("witaj") )
     {
-      return message.channel.send("No siemaneczko");
+      let a = random(7);
+      if ( a == 0 )  return message.channel.send("Hej!");
+      if ( a == 1 )  return message.channel.send("Witaj!");
+      if ( a == 2 )  return message.channel.send("Miło cię tu widzieć!");
+      if ( a == 3 )  return message.channel.send("Dzień dobry!");
+      if ( a == 4 )  return message.channel.send("Cieszę się, że tu jesteś! ;v;");
+      if ( a == 5 )  return message.channel.send("Jak się masz?");
+      if ( a == 6 )  return message.channel.send("Jak tam u Ciebie?");
+          
+                                    
+      
     }
        
   if(
