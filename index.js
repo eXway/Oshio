@@ -1,5 +1,7 @@
 const config = require("./config.json");
 const Discord = require("discord.js");
+const got = require(`got`);
+const api = `dc`
 const client = new Discord.Client();
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
@@ -73,6 +75,17 @@ if(commandfile) commandfile.run(bot,message,args);
     {
       return message.channel.send("Tak? :D");
     }
+
+  if(cmd == "hug" || cmd == "*hug*") {
+    if (args.length <1) return message.channel.send("Za mało info coś :c");
+    const res = await got('http://api.giphy.com/v1/gifs/random?api_key=${api}&teg=${encodeURIComponent(args.join(" "))}'), {json: true})
+    if (!res || !res.body || !res.body.data) return message.channel.send("Ni ma obrazga.");
+
+    let hugembed = new Discord.RichEmbed()
+    .setImage(res.body.data.image_url)
+    .setAuthor(message.author.tag, message.author.displayAvatarURL);
+    message.channel.send(hugembed);
+  }
 
 
 
