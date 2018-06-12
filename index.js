@@ -10,7 +10,7 @@ bot.commands = new Discord.Collection();
     }
 
 fs.readdir("./commands/", (err, files) => { // Commands .js file
-  
+
   if(err) console.log(err);
 
   let jsfile = files.filter(f => f.split(".").pop() === "js")
@@ -50,12 +50,9 @@ if(commandfile) commandfile.run(bot,message,args);
 //przywitania
   if(
     !cmd.indexOf("hej") ||
-    !cmd.indexOf("cześć") ||
     !cmd.indexOf("czesc") ||
     !cmd.indexOf("siem") ||
-    !cmd.indexOf("elo") ||
-    !cmd.indexOf("eló") ||
-    !cmd.indexOf("witaj") )
+    !cmd.indexOf("eló") )
     {
       let a = RAND(7);
       if ( a == 0 )  return message.channel.send("Hej!");
@@ -65,15 +62,15 @@ if(commandfile) commandfile.run(bot,message,args);
       if ( a == 4 )  return message.channel.send("Cieszę się, że tu jesteś! ;v;");
       if ( a == 5 )  return message.channel.send("Jak się masz?");
       if ( a == 6 )  return message.channel.send("Jak tam u Ciebie?");
-          
-                                    
-      
+
+
+
     }
-       
+
   if(
-    !cmd.indexOf("hara") )
+    !cmd.indexOf("oshio") )
     {
-      return message.channel.send("REGUJE KURDE!!!");
+      return message.channel.send("Tak?");
     }
 
 
