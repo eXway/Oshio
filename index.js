@@ -54,14 +54,15 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("siem") ||
     !cmd.indexOf("eló") )
     {
-      let a = RAND(7);
-      if ( a == 0 )  return message.channel.send("Hej!");
-      if ( a == 1 )  return message.channel.send("Witaj!");
-      if ( a == 2 )  return message.channel.send("Miło cię tu widzieć!");
-      if ( a == 3 )  return message.channel.send("Dzień dobry!");
-      if ( a == 4 )  return message.channel.send("Cieszę się, że tu jesteś! ;v;");
-      if ( a == 5 )  return message.channel.send("Jak się masz?");
-      if ( a == 6 )  return message.channel.send("Jak tam u Ciebie?");
+      let a = RAND(8);
+      if ( a == 0 )  return message.channel.send("Siemanko >///<");
+      if ( a == 1 )  return message.channel.send("CZEŚĆ!");
+      if ( a == 2 )  return message.channel.send("Hejka!");
+      if ( a == 3 )  return message.channel.send("NO CO TAM?!");
+      if ( a == 4 )  return message.channel.send("No hej!");
+      if ( a == 5 )  return message.channel.send("Hej hej c:");
+      if ( a == 6 )  return message.channel.send("DOBEREK PANIENKI");
+      if ( a == 7 )  return message.channel.send("NIKT NIE SPODZIEWAŁ SIĘ HISZPAŃSKIEJ INKWIZYCJI!");
 
 
 
