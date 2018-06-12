@@ -71,7 +71,7 @@ if(commandfile) commandfile.run(bot,message,args);
   if(
     !cmd.indexOf("oshio") )
     {
-      return message.channel.send("Tak?");
+      return message.channel.send("Tak? :D");
     }
 
 
