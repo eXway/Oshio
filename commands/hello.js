@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   function RANDOM (a) {
     return Math.floor((Math.random() * a));
   }
-  let a = RAND(8);
+  let a = RAND(9);
   if ( a == 0 )  return message.channel.send("Siemanko >///<");
   if ( a == 1 )  return message.channel.send("CZEŚĆ!");
   if ( a == 2 )  return message.channel.send("Hejka!");
@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
   if ( a == 5 )  return message.channel.send("Hej hej c:");
   if ( a == 6 )  return message.channel.send("DOBEREK PANIENKI");
   if ( a == 7 )  return message.channel.send("NIKT NIE SPODZIEWAŁ SIĘ HISZPAŃSKIEJ INKWIZYCJI!");
-
+  if ( a == 8 )  return message.channel.send("Hejka naklejka!");
 
 }
 
