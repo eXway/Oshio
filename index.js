@@ -1,5 +1,6 @@
 const config = require("./config.json");
 const Discord = require("discord.js");
+const superagent = require("superagent");
 const client = new Discord.Client();
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
