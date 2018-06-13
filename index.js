@@ -30,7 +30,7 @@ fs.readdir("./commands/", (err, files) => { // Commands .js file
 
 bot.on("ready", async() => { // po zalogowaniu
   console.log(`${bot.user.username} jest zalogowany!`);
-  bot.user.set
+  bot.user.setActivity("/ho/hug", {type: "WATCHING"});
 });
 
 
