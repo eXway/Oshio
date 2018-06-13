@@ -10,8 +10,10 @@ let {body} = await superagent
 
 let hugembed = new Discord.RichEmbed()
 .setColor("#8f8ff1")
-.setTitle(`${message.author} przytulił ${hUser}`)
+.addField("Hug!", `${message.author} przytulił(a) ${hUser}`)
 .setImage(body.data.images.original.url);
+
+message.delete().catch(O_o=>{});
 
 message.channel.send(hugembed);
 
