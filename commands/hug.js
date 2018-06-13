@@ -10,7 +10,7 @@ let {body} = await superagent
 let hugembed = new Discord.RichEmbed()
 .setColor("pink")
 .setTitle("HUG")
-.setImage(body.data[0].images.original.url);
+.setImage(body.data.images.original.url);
 
 message.channel.send(hugembed);
 
