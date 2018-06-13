@@ -5,7 +5,7 @@ const superagent = require("superagent");
 module.exports.run = async (bot, message, args) => {
 
 let {body} = await superagent
-.get(`http://api.giphy.com/v1/gifs/random?api_key=fsreqhxonBj4YypDt0UjdgHGpirrTa1k&s=#hug&fmt=json`);
+.get(`http://api.giphy.com/v1/gifs/random?api_key=fsreqhxonBj4YypDt0UjdgHGpirrTa1k&s=hug&fmt=json`);
 
 let hugembed = new Discord.RichEmbed()
 .setColor("pink")
