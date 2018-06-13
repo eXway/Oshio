@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 let hUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 if(!hUser) return message.channel.send("Nie podałeś kogo chcesz przytulić :c")
 let {body} = await superagent
-.get(`http://api.giphy.com/v1/gifs/random?api_key=fsreqhxonBj4YypDt0UjdgHGpirrTa1k&tag=hug&fmt=json`);
+.get(`http://api.giphy.com/v1/gifs/random?api_key=fsreqhxonBj4YypDt0UjdgHGpirrTa1k&tag=couple-hug&fmt=json`);
 
 let hugembed = new Discord.RichEmbed()
 .setColor("#dda6bb")
