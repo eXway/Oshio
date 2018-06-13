@@ -9,7 +9,7 @@ let {body} = await superagent
 .get(`http://api.giphy.com/v1/gifs/random?api_key=fsreqhxonBj4YypDt0UjdgHGpirrTa1k&tag=hug&fmt=json`);
 
 let hugembed = new Discord.RichEmbed()
-.setColor("#8f8ff1")
+.setColor("#dda6bb")
 .addField("Hug!", `${message.author} przytulił(a) ${hUser}`)
 .setImage(body.data.images.original.url);
 
