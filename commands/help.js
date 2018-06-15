@@ -7,7 +7,7 @@ let embedInfo = new Discord.RichEmbed()
 .addField("/ho/kiss", "Kisski <3")
 .addField("/ho/hello", "Przywitaj się! o/")
 .setFooter("No i zawsze odpowiemy na wasze przywitania! <3")
-.setColor("#8f8ff1");
+.setColor("#dda6bb");
 
 
 return message.channel.send(embedInfo);
