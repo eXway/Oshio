@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 let hUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 if(!hUser) return message.channel.send("Nie podałeś kogo chcesz pocałować :c");
 let {body} = await superagent
-.get(`https://api.tenor.com/v1/random?key=88RODP3HJCA2&q=Anime+kiss&safesearch=off`);
+.get(`https://api.tenor.com/v1/random?key=88RODP3HJCA2&q=Anime%20kiss&safesearch=off&pos=3`);
 
 let hugembed = new Discord.RichEmbed()
 .setColor("#dda6bb")
