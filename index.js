@@ -55,21 +55,25 @@ if(commandfile) commandfile.run(bot,message,args);
     !cmd.indexOf("siem") ||
     !cmd.indexOf("eló") )
     {
-      let a = RAND(8);
-      if ( a == 0 )  return message.channel.send("Siemanko >///<");
-      if ( a == 1 )  return message.channel.send("CZEŚĆ!");
-      if ( a == 2 )  return message.channel.send("Hejka!");
-      if ( a == 3 )  return message.channel.send("NO CO TAM?!");
-      if ( a == 4 )  return message.channel.send("No hej!");
-      if ( a == 5 )  return message.channel.send("Hej hej c:");
-      if ( a == 6 )  return message.channel.send("DOBEREK PANIENKI");
-      if ( a == 7 )  return message.channel.send("NIKT NIE SPODZIEWAŁ SIĘ HISZPAŃSKIEJ INKWIZYCJI!");
+      let randWelc = RAND(8);
+      if ( randWelc == 0 )  return message.channel.send("Siemanko >///<");
+      if ( randWelc == 1 )  return message.channel.send("CZEŚĆ!");
+      if ( randWelc == 2 )  return message.channel.send("Hejka!");
+      if ( randWelc == 3 )  return message.channel.send("NO CO TAM?!");
+      if ( randWelc == 4 )  return message.channel.send("No hej!");
+      if ( randWelc == 5 )  return message.channel.send("Hej hej c:");
+      if ( randWelc == 6 )  return message.channel.send("DOBEREK PANIENKI");
+      if ( randWelc == 7 )  return message.channel.send("NIKT NIE SPODZIEWAŁ SIĘ HISZPAŃSKIEJ INKWIZYCJI! XD");
     }
 
   if(
     !cmd.indexOf("oshio") )
     {
-      return message.channel.send("Tak? :D");
+      let randOshio = RAND(4);
+      if (randOshio == 0) return message.channel.send("Tak? :D");
+      if (randOshio == 1) return message.channel.send("No ja! >.<");
+      if (randOshio == 2) return message.channel.send("Lubisz mnie *pokeować* co?");
+      if (randOshio == 3) return message.channel.send("OMG ten fejm! o/");
     }
 
 
