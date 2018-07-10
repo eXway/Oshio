@@ -80,4 +80,4 @@ if(commandfile) commandfile.run(bot,message,args);
 
 })
 
-bot.login(process.env.oshioID);
+bot.login(config.token);
