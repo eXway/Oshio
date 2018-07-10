@@ -3,12 +3,12 @@ const superagent = require("superagent");
 
 module.exports.run = async (bot, message, args) => {
 
-let hugembed = new Discord.RichEmbed()
+let catembed = new Discord.RichEmbed()
 .setColor("#dda6bb")
 .addField("Kotek! <3")
 .setImage(http://thecatapi.com/api/images/get?format=xml);
 
-message.channel.send(hugembed);
+message.channel.send(catembed);
 
 }
 
