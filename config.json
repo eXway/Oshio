@@ -1,4 +1,4 @@
 {
-  "token": `%{process.env.oshioId}`,
+  "token": process.env.oshioId,
   "prefix": "/ho/"
 }
