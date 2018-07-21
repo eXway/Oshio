@@ -65,6 +65,18 @@ if(commandfile) commandfile.run(bot,message,args);
       if ( randWelc == 6 )  return message.channel.send("DOBEREK PANIENKI");
       if ( randWelc == 7 )  return message.channel.send("NIKT NIE SPODZIEWAŁ SIĘ HISZPAŃSKIEJ INKWIZYCJI! XD");
     }
+    
+      if(
+    message.content.toLowerCase().search("kocham") > -1 ||
+    message.content.toLowerCase().search("ubóstwiam") > -1 ||
+    message.content.toLowerCase().search("uwielbiam") > -1 )
+  {
+   let randCurse = RANDOM(4);
+   if (randCurse == 0) return message.channel.send("Awwww~ <3");
+   if (randCurse == 1) return message.channel.send("Ty też?!");
+   if (randCurse == 2) return message.channel.send("Skoro tam bardzo lubisz to może jakoś to udowodnisz, co?");
+   if (randCurse == 3) return message.channel.send("\"Miłość rośnie w okół nas\"");
+  }
 
   if(
     !cmd.indexOf("oshio") )
