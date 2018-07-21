@@ -75,7 +75,7 @@ if(commandfile) commandfile.run(bot,message,args);
    if (randCurse == 0) return message.channel.send("Awwww~ <3");
    if (randCurse == 1) return message.channel.send("Ty też?!");
    if (randCurse == 2) return message.channel.send("Skoro tam bardzo lubisz to może jakoś to udowodnisz, co?");
-   if (randCurse == 3) return message.channel.send("\"Miłość rośnie w okół nas\"");
+   if (randCurse == 3) return message.channel.send("Miłość rośnie w okół nas");
   }
 
   if(
