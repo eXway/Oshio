@@ -1,4 +1,5 @@
 const config = require("./config.json");
+const key = process.env.oshioId;
 const Discord = require("discord.js");
 const superagent = require("superagent");
 const client = new Discord.Client();
