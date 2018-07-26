@@ -68,7 +68,7 @@ if(commandfile) commandfile.run(bot,message,args);
     }
     
       if(
-    message.content.toLowerCase().search("kocham") > -1 ||
+    message.content.toLowerCase().search("kocha") > -1 ||
     message.content.toLowerCase().search("ubóstwiam") > -1 ||
     message.content.toLowerCase().search("uwielbiam") > -1 )
   {
@@ -82,11 +82,12 @@ if(commandfile) commandfile.run(bot,message,args);
   if(
     !cmd.indexOf("oshio") )
     {
-      let randOshio = RAND(4);
+      let randOshio = RAND(5);
       if (randOshio == 0) return message.channel.send("Tak? :D");
       if (randOshio == 1) return message.channel.send("No ja! >.<");
       if (randOshio == 2) return message.channel.send("Lubisz mnie *pokeować* co?");
       if (randOshio == 3) return message.channel.send("OMG ten fejm! o/");
+      if (randOshio == 3) return message.channel.send("Słucham cię, kochanie ( ͡° ͜ʖ ͡°)");
     }
 
 
