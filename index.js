@@ -82,7 +82,7 @@ if(commandfile) commandfile.run(bot,message,args);
   if(
     !cmd.indexOf("oshio") )
     {
-      let randOshio = RAND(5);
+      let randOshio = RAND(6);
       if (randOshio == 0) return message.channel.send("Tak? :D");
       if (randOshio == 1) return message.channel.send("No ja! >.<");
       if (randOshio == 2) return message.channel.send("Lubisz mnie *pokeować* co?");
