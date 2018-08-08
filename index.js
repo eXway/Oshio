@@ -87,7 +87,7 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randOshio == 1) return message.channel.send("No ja! >.<");
       if (randOshio == 2) return message.channel.send("Lubisz mnie *pokeować* co?");
       if (randOshio == 3) return message.channel.send("OMG ten fejm! o/");
-      if (randOshio == 3) return message.channel.send("Słucham cię, kochanie *lenny*");
+      if (randOshio == 4) return message.channel.send("Słucham cię, kochanie *lenny*");
     }
 
 
