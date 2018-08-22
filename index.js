@@ -66,7 +66,7 @@ if(commandfile) commandfile.run(bot,message,args);
       if ( randWelc == 6 )  return message.channel.send("DOBEREK PANIENKI");
       if ( randWelc == 7 )  return message.channel.send("NIKT NIE SPODZIEWAŁ SIĘ HISZPAŃSKIEJ INKWIZYCJI! XD");
     }
-    
+
       if(
     message.content.toLowerCase().search("kocha") > -1 ||
     message.content.toLowerCase().search("ubóstwiam") > -1 ||
@@ -89,6 +89,18 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randOshio == 3) return message.channel.send("OMG ten fejm! o/");
       if (randOshio == 4) return message.channel.send("Słucham cię, kochanie *lenny*");
     }
+
+    if(
+      !cmd.indexOf("buru")||
+      !cmd.indexOf("buru buru"))
+      {
+        let randOshio = RAND(3);
+        if (randOshio == 0) return message.channel.send("Buru~");
+        if (randOshio == 1) return message.channel.send("Buru buru!");
+        if (randOshio == 2) return message.channel.send("Nie bawię się w to. ಠ益ಠ");
+      }
+
+
 
 
 
