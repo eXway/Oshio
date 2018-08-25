@@ -68,15 +68,13 @@ if(commandfile) commandfile.run(bot,message,args);
     }
 
       if(
-    message.content.toLowerCase().search("kocha") > -1 ||
     message.content.toLowerCase().search("ubóstwiam") > -1 ||
     message.content.toLowerCase().search("uwielbiam") > -1 )
   {
-   let randCurse = RAND(4);
+   let randCurse = RAND(3);
    if (randCurse == 0) return message.channel.send("Awwww~ <3");
    if (randCurse == 1) return message.channel.send("Ty też?!");
-   if (randCurse == 2) return message.channel.send("Skoro tak bardzo to lubisz, to może jakoś to udowodnisz, co?");
-   if (randCurse == 3) return message.channel.send("Miłość rośnie wokół nas");
+   if (randCurse == 2) return message.channel.send("Miłość rośnie wokół nas");
   }
 
   if(
@@ -86,7 +84,7 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randOshio == 0) return message.channel.send("Tak? :D");
       if (randOshio == 1) return message.channel.send("No ja! >.<");
       if (randOshio == 2) return message.channel.send("Lubisz mnie *pokeować* co?");
-      if (randOshio == 3) return message.channel.send("OMG ten fejm! o/");
+      if (randOshio == 3) return message.channel.send("To już robi się dziwne T^T");
       if (randOshio == 4) return message.channel.send("Słucham cię, kochanie *lenny*");
     }
 
