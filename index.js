@@ -87,6 +87,14 @@ if(commandfile) commandfile.run(bot,message,args);
       if (randOshio == 3) return message.channel.send("To już robi się dziwne T^T");
       if (randOshio == 4) return message.channel.send("Słucham cię, kochanie *lenny*");
     }
+    
+    if(
+       message.content.toLowerCase().search("za moich czasów") > -1 || 
+       message.content.toLowerCase().search("za moich czasow") > -1 ||
+       message.content.toLowerCase().search("zamoichczasów") > -1 ||
+       message.content.toLowerCase().search("zamoichczasow") > -1) {
+        return message.channel.send("OK, boomer");
+      }
 
     if(
       !cmd.indexOf("buru")||
