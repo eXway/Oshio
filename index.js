@@ -110,7 +110,7 @@ if(commandfile) commandfile.run(bot,message,args);
       }
    
     if (message.content === 'Poka avatara') {
-         message.reply("Proszę bardzo\<\3: " + message.author.avatarURL);
+         message.reply("Proszę bardzo\<3: " + message.author.avatarURL);
     }
 
 
