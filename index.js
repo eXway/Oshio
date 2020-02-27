@@ -78,7 +78,7 @@ if(commandfile) commandfile.run(bot,message,args);
   }
 
   if(
-    !cmd.indexOf("oshio") )
+    message.content.toLowerCase().search("oshio") > -1 ) )
     {
       let randOshio = RAND(6);
       if (randOshio == 0) return message.channel.send("Tak? :D");
@@ -92,6 +92,9 @@ if(commandfile) commandfile.run(bot,message,args);
        message.content.toLowerCase().search("za moich czasów") > -1 || 
        message.content.toLowerCase().search("za moich czasow") > -1 ||
        message.content.toLowerCase().search("zamoichczasów") > -1 ||
+       message.content.toLowerCase().search("kiedy byłem") > -1 ||
+        message.content.toLowerCase().search("kiedyś to było") > -1 ||
+       message.content.toLowerCase().search("kiedy byłam) > -1 ||
        message.content.toLowerCase().search("zamoichczasow") > -1) {
         return message.channel.send("OK, boomer");
       }
