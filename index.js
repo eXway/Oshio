@@ -78,7 +78,7 @@ if(commandfile) commandfile.run(bot,message,args);
   }
 
   if(
-    message.content.toLowerCase().search("oshio") > -1 ) )
+    message.content.toLowerCase().search("oshio") > -1 )
     {
       let randOshio = RAND(6);
       if (randOshio == 0) return message.channel.send("Tak? :D");
