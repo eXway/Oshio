@@ -94,7 +94,7 @@ if(commandfile) commandfile.run(bot,message,args);
        message.content.toLowerCase().search("zamoichczasów") > -1 ||
        message.content.toLowerCase().search("kiedy byłem") > -1 ||
         message.content.toLowerCase().search("kiedyś to było") > -1 ||
-       message.content.toLowerCase().search("kiedy byłam) > -1 ||
+       message.content.toLowerCase().search("kiedy byłam") > -1 ||
        message.content.toLowerCase().search("zamoichczasow") > -1) {
         return message.channel.send("OK, boomer");
       }
