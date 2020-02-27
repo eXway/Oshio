@@ -93,7 +93,7 @@ if(commandfile) commandfile.run(bot,message,args);
        message.content.toLowerCase().search("za moich czasow") > -1 ||
        message.content.toLowerCase().search("zamoichczasów") > -1 ||
        message.content.toLowerCase().search("kiedy byłem") > -1 ||
-        message.content.toLowerCase().search("kiedyś to było") > -1 ||
+       message.content.toLowerCase().search("kiedyś to było") > -1 ||
        message.content.toLowerCase().search("kiedy byłam") > -1 ||
        message.content.toLowerCase().search("zamoichczasow") > -1) {
         return message.channel.send("OK, boomer");
@@ -108,7 +108,10 @@ if(commandfile) commandfile.run(bot,message,args);
         if (randOshio == 1) return message.channel.send("Buru buru!");
         if (randOshio == 2) return message.channel.send("Nie bawię się w to. ಠ益ಠ");
       }
-
+   
+    if (message.content === 'Poka avatara') {
+         message.reply("Proszę bardzo\<\3: " + message.author.avatarURL);
+    }
 
 
 
